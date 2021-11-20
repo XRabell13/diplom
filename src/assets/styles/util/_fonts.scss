@@ -1,64 +1,78 @@
 /*======FONTS==========*/
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url("/assets/fonts/gilroy/thin.ttf");
+    font-family: 'Roboto';
+    src: url("/assets/fonts/roboto/thin.ttf");
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url("/assets/fonts/gilroy/ultra-light.ttf");
-    font-weight: 200;
-    font-style: normal;
+    font-family: 'Roboto';
+    src: url("/assets/fonts/roboto/thinItalic.ttf");
+    font-weight: 100;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url("/assets/fonts/gilroy/light.ttf");
+    font-family: 'Roboto';
+    src: url("/assets/fonts/roboto/light.ttf");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url("/assets/fonts/gilroy/regular.ttf");
+    font-family: 'Roboto';
+    src: url("/assets/fonts/roboto/lightItalic.ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("/assets/fonts/roboto/regular.ttf");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url("/assets/fonts/gilroy/medium.ttf");
+    font-family: 'Roboto';
+    src: url("/assets/fonts/roboto/medium.ttf");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url("/assets/fonts/gilroy/semi-bold.ttf");
-    font-weight: 600;
-    font-style: normal;
+    font-family: 'Roboto';
+    src: url("/assets/fonts/roboto/mediumItalic.ttf");
+    font-weight: 500;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url("/assets/fonts/gilroy/bold.ttf");
+    font-family: 'Roboto';
+    src: url("/assets/fonts/roboto/bold.ttf");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url("/assets/fonts/gilroy/extra-bold.ttf");
-    font-weight: 800;
+    font-family: 'Roboto';
+    src: url("/assets/fonts/roboto/boldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("/assets/fonts/roboto/black.ttf");
+    font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url("/assets/fonts/gilroy/black.ttf");
+    font-family: 'Roboto';
+    src: url("/assets/fonts/roboto/blackItalic.ttf");
     font-weight: 900;
-    font-style: normal;
+    font-style: italic;
 }
