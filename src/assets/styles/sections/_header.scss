@@ -1,30 +1,26 @@
 .header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include display-f(center, space-between, row);
 }
 
 .logo{
-    width: $width-logo;
+    width: 195px;
     height: auto;
-    margin-left: $margin-l;
+    margin-left: 34px;
 }
 
 .navigation__links{
-    display: flex;
-    flex-direction: row;
+    @include display-f(none, none, row);
     width: 100%;
 }
 
 .link__container{
-    @include display-f(center, center);
-    margin-left: $link-margin-r;
+    @include display-f(center, center, column);
+    margin-left: 80px;
 }
 
 .link-item{
-    font-size: $font-size-link-item;
-    line-height: $line-height-link-item;
+    font-size: $fz-header-footer;
+    line-height: $lh-header-footer;
     color: $c-green-link-text;
 }
 
@@ -37,22 +33,18 @@
     .link-item{
         color: $c-white;
         font-weight: 700;
-        font-size: $font-size-green-btn;
-        line-height: $line-height-green-btn;
+        font-size: $fz-green-btn;
+        line-height: $lh-green-btn;
     }
 }
 
 .link-item__login{
-    @include display-f(center, center);
-    width: $width-nav-btn;
-    height: $height-nav-btn;
+    padding: 35px 55px;
     border-left: 1px solid;
 }
 
 .link-item__green-btn{
-    @include display-f(center, center);
-    width: $width-nav-btn;
-    height: $height-nav-btn;
+    padding: 36px 28px;
     background-color: $c-green-btn;
 }
 
