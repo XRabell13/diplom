@@ -1,6 +1,7 @@
 /*=======GLOBAL=======*/
 @import "var";
 @import "fonts";
+@import "mixins";
 
 html {
     font-size: 10px;
@@ -49,8 +50,6 @@ body {
 }
 
 .container {
-    max-width: 1400px; // ширина контента плюс паддинги
+    max-width: 1440px;
     margin: 0 auto;
-    padding-right: 10px;
-    padding-left: 10px;
 }
