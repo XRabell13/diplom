@@ -1,0 +1,41 @@
+.section__mission-superbloom{
+    background-color: $bc-section_mission-superbloom;
+    padding: $margin-tb-img 0px;
+}
+.container__mission-superbloom{
+    @include display-f(center, space-evenly, row);
+    .container__img{
+        margin: 0 10px;
+        &:last-child{
+            max-width: $size-symbol;
+            width: 100%;
+        }
+    }
+    .btn{
+        margin-top: 41px;
+        &_bc{
+            @include btn($c-white, $bc-section_mission-superbloom, $fz-btn, $lh-btn);
+            border: 2px solid $c-white;
+            box-sizing: border-box;
+        }
+    }
+}
+.info__text-mission{
+    @include display-f(flex-start, none, column);
+    margin-left: 10px;
+}
+.text__title-mission{
+    margin-bottom: 33px;
+    font-size: 11px;
+    line-height: 118%;
+    letter-spacing: 4.3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.57);
+}
+.span__text-mission{
+    font-size: 34px;
+    line-height: 150%;
+    letter-spacing: 0.3px;
+    color: $c-white;
+}
+
