@@ -1,0 +1,42 @@
+.section__hero{
+    background-color: $bc-hero-section;
+    padding: $margin-tb-img 0px;
+}
+.container__hero-section{
+    @include display-f(center, space-evenly, none);
+}
+.container__img{
+    max-width: 546px;
+    width: 100%;
+    margin-right: 10px;
+}
+.container__text{
+    font-size: 14px;
+}
+.text__title{
+    font-weight: 400;    
+    font-size: 61px;
+    line-height: 87%;
+    margin-bottom: 30px;
+    color: $c-white;
+}
+.span__text{
+    display: block;
+    line-height: 236%;
+    margin: 7.5px 0;
+    margin-left: 25px;
+    color: $c-white;
+    &:first-child{
+        line-height: 143%;
+        margin-left: 0;
+        color: $c-white;
+    }
+}
+.btn{
+    margin-top: 30px;
+    &_white{
+        @include btn($c-green-btn, $c-white, $fz-btn, $lh-btn);
+    }
+}
+
+

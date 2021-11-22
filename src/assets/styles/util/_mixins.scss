@@ -4,3 +4,17 @@
     justify-content: $justify-content;
     flex-direction: $flex-direction;
 }
+
+@mixin btn($color-text, $bc, $fz-text, $lh-text){
+    display: inline-block;
+    padding: 1px 24px;
+    font-weight: bold;
+    font-size: $fz-text;
+    line-height: $lh-text;
+    text-align: center;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: $color-text;
+    border-radius: 50px;
+    background-color: $bc;
+}
