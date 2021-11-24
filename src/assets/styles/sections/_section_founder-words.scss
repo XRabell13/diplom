@@ -1,0 +1,30 @@
+.founder-words{
+    @include display-f(center, center, column);
+    text-align: center;
+    padding-bottom: 71px; 
+}
+.container__founder-img{
+    @include display-f(center, center, none);
+}
+.founder-image{
+    max-width: 120px;
+    margin-bottom: 20px;
+}
+.container__founder-words{
+    color: $c-green-text;
+}
+.container__words{
+    font-size: 50px;
+    line-height: 130%;
+    max-width: 900px;
+    margin: 83px 0px;
+}
+.text__name{
+    font-size: 13px;
+    line-height: 138%;
+}
+.text__post{
+    font-size: 12px;
+    line-height: 125%;
+    margin-top: 5px;
+}
