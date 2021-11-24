@@ -1,0 +1,34 @@
+.section__about-superbloom{
+    background-color: $bc-section_about-superbloom;
+    padding: $margin-tb-img 0px;
+}
+.container__about-superbloom{
+    @include display-f(center, space-evenly, none);
+    .container__img{
+        max-width: 440px;
+        width: 100%;
+        margin-right: 10px;
+    }
+    .container__text{
+        max-width: 615px;
+    }
+    .text__title{  
+        font-size: 50px;
+        line-height: 110%;
+        margin-bottom: 30px;
+        color:$c-green-text;
+    }
+    .span__text{
+        display: block;
+        font-size: $fz-paragraph;
+        line-height: 140%;
+        color:$c-green-text;
+    }
+    .btn{
+        margin-top: 38px;
+        &_green{
+            @include btn($c-white, $c-green-btn, $fz-btn-big, $lh-btn);
+        }
+    }   
+}
+
