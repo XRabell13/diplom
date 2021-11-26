@@ -3,17 +3,17 @@
     text-align: center;
     padding-bottom: 71px; 
 }
-.container__founder-img{
+.founder-img__container{
     @include display-f(center, center, none);
 }
 .founder-image{
     max-width: 120px;
     margin-bottom: 20px;
 }
-.container__founder-words{
+.founder-words__container{
     color: $c-green-text;
 }
-.container__words{
+.words__container{
     font-size: 50px;
     line-height: 130%;
     max-width: 900px;

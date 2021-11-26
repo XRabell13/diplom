@@ -1,0 +1,13 @@
+mixin support-element(title, text, img_src, img_symbole) 
+    div.support__item
+        div.item__content
+            div.container__img
+                img(src=img_src, alt="image")
+            div.container__text    
+                h5.text__title=title
+                div.text__description=text
+        div.container__img.symbole
+            img(src=img_symbole, alt="symbole")  
+
+
+
