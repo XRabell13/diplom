@@ -1,0 +1,33 @@
+.footer{
+    padding: 90px 0;
+}
+.container__footer{
+    @include display-f(none, space-evenly, row);
+    .container__info{
+        @include display-f(center, center, column);
+        max-width: 360px;
+        font-size: $fz-header-footer;
+        line-height: $lh-header-footer;
+        color: $c-green-text;
+        .info__link{
+            margin-bottom: 38px;
+            font-size: 19px;
+            line-height: 105%;
+            color: $c-green-text;
+        }
+        &:last-child{
+            @include display-f(flex-end, center, column);
+            .info__link{
+                font-size: $fz-header-footer;
+                line-height: $lh-header-footer;
+            }
+            .info__text{
+                text-align: right;
+            }
+        }
+    }
+    .container__img{
+        max-width: $size-symbol;
+        margin: 0;
+    }
+}
