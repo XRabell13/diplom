@@ -1,6 +1,10 @@
 .section__mission-superbloom{
     background-color: $bc-section_mission-superbloom;
     padding: $margin-tb-img 0px;
+
+    @media(max-width: 900px){
+        padding: $margin-tb-img-adaptive 0px;
+    }
 }
 .container__mission-superbloom{
     @include display-f(center, space-evenly, row);
@@ -9,6 +13,14 @@
         &:last-child{
             max-width: $size-symbol;
             width: 100%;
+
+            @media(max-width: 900px){
+                margin-top: 20px;
+            }
+        }
+
+        @media(max-width: 900px){
+           margin: 0;
         }
     }
     .btn{
@@ -19,12 +31,22 @@
             box-sizing: border-box;
         }
     }
+    
+    @media (max-width:900px){
+        flex-direction: column;
+        margin: 0 $margin-content-adaptive;
+    }
 }
 .info__text-mission{
     @include display-f(flex-start, none, column);
     margin-left: 10px;
+    @media (max-width:900px){
+        text-align: center;
+        align-items: center;
+    }
 }
 .text__title-mission{
+    width: 100%;
     margin-bottom: 33px;
     font-size: 11px;
     line-height: 118%;
@@ -33,6 +55,7 @@
     color: rgba($c-white, 0.57);
 }
 .span__text-mission{
+    max-width: 532px;
     font-size: 34px;
     line-height: 150%;
     letter-spacing: 0.3px;
