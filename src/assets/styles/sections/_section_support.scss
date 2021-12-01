@@ -31,7 +31,7 @@
             color: $c-green-text;
 
             @media(max-width: 1000px){
-                font-size: 25px; //сменить на переменную!!!
+                font-size: $fz-title-adaptive;
                 margin-top: 24px;
              }
         }
