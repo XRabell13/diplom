@@ -1,6 +1,10 @@
 .faith-superbloom{
     background-color: $c-dark-purple;
     padding: $margin-tb-img 0px;
+
+    @media(max-width: 500px){
+        padding: $margin-tb-img $margin-content-adaptive;
+     }
 }
 .container__faith-superbloom{
     @include display-f(center, space-evenly, column);
@@ -17,6 +21,10 @@
             line-height: 120%;
             letter-spacing: 0.5px;
             color: $c-white;
+
+            @media(max-width: 500px){
+               font-size: 25px;
+             }
         }
     }
     .btn{
