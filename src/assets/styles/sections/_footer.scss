@@ -1,5 +1,9 @@
 .footer{
     padding: 90px 0;
+
+    @media(max-width: 800px){
+        padding: 90px $margin-content-adaptive;
+    }
 }
 .container__footer{
     @include display-f(none, space-evenly, row);
@@ -23,11 +27,33 @@
             }
             .info__text{
                 text-align: right;
+
+                @media(max-width: 800px){
+                    text-align: center;
+                }
+            }
+            
+            @media(max-width: 800px){
+                align-items: center;
+                
+            }
+        }
+        @media(max-width: 800px){
+            .info__text{
+                text-align: center;
             }
         }
     }
     .container__img{
         max-width: $size-symbol;
         margin: 0;
+        
+        @media(max-width: 800px){
+            margin: 20px 0px;
+        }
+    }
+
+    @media(max-width: 800px){
+        @include display-f(center, space-evenly, column);
     }
 }

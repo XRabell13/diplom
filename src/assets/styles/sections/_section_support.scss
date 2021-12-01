@@ -2,6 +2,10 @@
     margin-bottom: 120px;
     margin-top: 20px;
     color: $c-green-text;
+
+    @media(max-width: 1000px){
+        margin: 60px $margin-content-adaptive;
+     }
 }
 .support__container{
     @include display-f(center, center, column);
@@ -25,6 +29,11 @@
             line-height: $lh-title;
             margin-bottom: 24px;
             color: $c-green-text;
+
+            @media(max-width: 1000px){
+                font-size: $fz-title-adaptive;
+                margin-top: 24px;
+             }
         }
         .text__description{
             font-size: $fz-paragraph;
@@ -36,6 +45,11 @@
     @include display-f(center, center, column);
     .item__content{
         @include display-f(center, center, row);
+
+        @media(max-width: 1000px){
+          flex-direction: column;
+         }
+
     }
     &:last-child{
         .symbole{
@@ -47,6 +61,10 @@
     &:nth-child(2n){
         .item__content{
            flex-direction: row-reverse;
+
+           @media(max-width: 1000px){
+            flex-direction: column;
+            }
         }
     }
 }

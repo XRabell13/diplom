@@ -1,6 +1,10 @@
 .section__about-superbloom{
     background-color: $bc-section_about-superbloom;
     padding: $margin-tb-img 0px;
+
+    @media(max-width:900px){
+        padding: $margin-tb-img-adaptive 0px;
+     }
 }
 .container__about-superbloom{
     @include display-f(center, space-evenly, none);
@@ -8,6 +12,11 @@
         max-width: 440px;
         width: 100%;
         margin-right: 10px;
+
+        @media(max-width:900px){
+            width: auto;
+            margin: 0px;
+        }
     }
     .container__text{
         max-width: 615px;
@@ -17,6 +26,11 @@
         line-height: 110%;
         margin-bottom: 30px;
         color:$c-green-text;
+
+        @media(max-width: 900px)
+        {
+            font-size: $fz-title-adaptive;
+        }
     }
     .span__text{
         display: block;
@@ -29,6 +43,15 @@
         &_green{
             @include btn($c-white, $c-green-btn, $fz-btn-big, $lh-btn);
         }
-    }   
+    }  
+    
+    @media(max-width:900px){
+        flex-direction:  column-reverse;
+        margin: 0 $margin-content-adaptive;
+        .container__info{
+            &:last-child{
+                @include display-f(center, center, column);
+            }
+        }
+    }
 }
-
